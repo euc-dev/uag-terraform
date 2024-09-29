@@ -1,31 +1,7 @@
-#
-#  Copyright (C) 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022 VMware Inc. All rights reserved.
-#
-#  Permission is hereby granted, free of charge, to any person obtaining a copy
-#  of the software in this file (the "Software"), to deal in the Software
-#  without restriction, including without limitation the rights to use, copy,
-#  modify, merge, publish, distribute, sublicense, and/or sell copies of the
-#  Software, and to permit persons to whom the Software is furnished to do so,
-#  subject to the following conditions:
-#
-#  The above copyright notice and this permission notice shall be included in
-#  all copies or substantial portions of the Software.
-#
-#  The names "VMware" and "VMware, Inc." must not be used to endorse or promote
-#  products derived from the Software without the prior written permission of
-#  VMware, Inc.
-#
-#  Products derived from the Software may not be called "VMware", nor may
-#  "VMware" appear in their name, without the prior written permission of
-#  VMware, Inc.
-#
-#  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-#  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-#  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-#  VMWARE,INC. BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-#  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-#  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-#
+/*
+ * Copyright (c) 2025 Omnissa, LLC.
+ * -- Omnissa Public
+ */
 
 param(
       [Parameter(Mandatory=$false)] [string] $awAPIServerPwd,
@@ -694,32 +670,29 @@ function GetUserPwd {
 }
 
 #
-# Function to prompt the user for whether to join VMware's Customer Experience Improvement Program (CEIP)
+# Function to prompt the user for whether to join Omnissa's Customer Experience Improvement Program (CEIP)
 # Default is yes.
 #
 
 function GetCeipEnabled {
 	param( [Parameter(Mandatory=$true)] $apName)
-write-host "Join the VMware Customer Experience Improvement Program?
+write-host "Join the Omnissa Customer Experience Improvement Program?
 
-This setting is supported in UAG versions 3.1 and newer.
+This product participates in Omnissa's Customer Experience Improvement Program (CEIP).
+The CEIP provides Omnissa with information that enables Omnissa to improve its products and services,
+to fix problems, and to advise you on how best to deploy and use our products. As part of the CEIP,
+Omnissa collects technical information about your organization's use of Omnissa products and services
+on a regular basis in association with your organization's Omnissa license key(s).
+This information does not personally identify any individual.
 
-VMware’s Customer Experience Improvement Program (CEIP) provides VMware with information that enables VMware to
-improve its products and services, to fix problems, and to advise you on how best to deploy and use our products.
+For additional information regarding the CEIP, please see the Trust Center at https://www.omnissa.com/trust-center/.
 
-As part of the CEIP, VMware collects technical information about your organization's use of VMware products and
-services on a regular basis in association with your organization's VMware license key(s). This information does
-not personally identify any individual.
+If you prefer not to participate in Omnissa's CEIP, you should enter no.
 
-Additional information regarding the data collected through CEIP and the purposes for which it is used by VMware
-is set forth in the Trust & Assurance Center at http://www.vmware.com/trustvmware/ceip.html.
-
-If you prefer not to participate in VMware's CEIP for UAG 3.1 and newer, you should enter no.
-
-You may join or leave VMware's CEIP for this product at any time. In the UAG Admin UI in System Configuration,
+You may join or leave Omnissa's CEIP for this product at any time. In the UAG Admin UI in System Configuration,
 there is a setting 'Join CEIP' which can be set to yes or no and has immediate effect.
 
-To Join the VMware Customer Experience Improvement Program with Unified Access Gateway version 3.1 and newer,
+To Join the Omnissa Customer Experience Improvement Program with Unified Access Gateway,
 either enter yes or just hit return as the default for this setting is yes."
 
     $valid=$false
