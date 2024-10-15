@@ -1,7 +1,7 @@
-/*
- * Copyright (c) 2025 Omnissa, LLC.
- * -- Omnissa Public
- */
+#
+# Copyright (c) 2025 Omnissa, LLC.
+# -- Omnissa Public
+#
 
 
 

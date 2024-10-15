@@ -1,4 +1,10 @@
 #!/bin/bash
+
+#
+# Copyright (c) 2025 Omnissa, LLC.
+# -- Omnissa Public
+#
+
 set -e
 exec 2> >(tee -a uagterraform.log >&1)
 
@@ -158,7 +164,7 @@ do
   fi
   ((INDEX++))
   json="$(
-    jq --arg ipaddress "$ip_address" --arg adminpassword "VMware1!" --arg index "${INDEX}" '
+    jq --arg ipaddress "$ip_address" --arg adminpassword "P@ssw0rd" --arg index "${INDEX}" '
       .["uag\($index)"] += {$ipaddress, $adminpassword}
     ' <<< "$json"
   )"
