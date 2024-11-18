@@ -14,11 +14,11 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ## Steps
 
-Add module (resource pool) for UAGs to deploy
-Update sensitive_inputs.ini with UAG passwords
-Update uag.ini with uag configuration
-terrraform init to initialize module
-terraform plan to view configuration of changes made to terraform file
-terraform apply (-auto-approve) to apply the changes
-terraform refresh to refresh the configuration to show the ip addresses allotted to deployed UAGs
+Add module (resource pool) for UAGs to deploy \
+Update sensitive_inputs.ini with UAG passwords \
+Update uag.ini with uag configuration \
+terraform init to initialize module \
+terraform plan to view configuration of changes made to terraform file \
+terraform apply (-auto-approve) to apply the changes \
+terraform refresh to refresh the configuration to show the ip addresses allotted to deployed UAGs \
 terraform output to view the ip addresses
